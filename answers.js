@@ -10,4 +10,8 @@ export const answers= [
     'HELL NAW!',
     'Im busy..',
     'Ask someone else',
+    'idk',
+    'Ask Again',
+    'lol...',
+    'you really are lonely arent you',
   ];

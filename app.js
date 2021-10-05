@@ -12,9 +12,13 @@ const getRandomNumber = (max)=>{
 
 const button = document.getElementById('submitButton');
 submitButton.addEventListener('click', () => {
+  
   const randomAnswer = getRandomNumber(answers.length);
   const answer = document.getElementById('answer');
   answer.textContent = answers[randomAnswer];
+  question.value = '';
+  onclick="typeWriter()";
+  onclick="newAnswers()";
 });
 
 
