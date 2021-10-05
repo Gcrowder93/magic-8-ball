@@ -6,16 +6,16 @@
 
   import { answers } from './answers.js';
 
-const colors = ['red', 'white', 'blue'];
-
 const getRandomNumber = (max)=>{
   return Math.floor(Math.random() * max);
 }
 
-const randomAnswer = getRandomNumber(answers.length);
-console.log(answers[randomAnswer]);
-
-
+const button = document.getElementById('submitButton');
+submitButton.addEventListener('click', () => {
+  const randomAnswer = getRandomNumber(answers.length);
+  const answer = document.getElementById('answer');
+  answer.textContent = answers[randomAnswer];
+});
 
 
 //html elements = paragraph for question, button for submit, 
