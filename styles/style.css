@@ -6,7 +6,9 @@ body {
 }
 
 h1 {
-    color:blueviolet
+    color:blueviolet;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px blue;
 }
 
 #question {
@@ -27,8 +29,15 @@ button {
 #answer {
     font-family:'Courier New', Courier, monospace;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: ;
     background-color: blueviolet;
+    text-shadow: 1px 1px 1px blue;
+}
+
+span {
+    color: gray;
+    background-color: black;
+    font-size: 5px;
 }
 
 .glow-on-hover {
