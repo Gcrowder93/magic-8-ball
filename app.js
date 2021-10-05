@@ -17,9 +17,34 @@ submitButton.addEventListener('click', () => {
   const answer = document.getElementById('answer');
   answer.textContent = answers[randomAnswer];
   question.value = '';
-  onclick="typeWriter()";
-  onclick="newAnswers()";
 });
+
+var i = 0;
+var txt = ''; //the typing text
+var speed = 50;
+
+function typeWriter() {
+
+  //clear the html initially for a text
+  if (i === 0)
+    document.getElementById("answer").innerHTML = '';
+
+  if (i < txt.length) {
+
+    document.getElementById("answer").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+function onclick() {
+  //set the typing text
+  txt = answers[Math.floor(Math.random() * quotes.length)];
+  
+  //reset the index
+  i = 0;
+  typeWriter();
+}
 
 
 //html elements = paragraph for question, button for submit, 

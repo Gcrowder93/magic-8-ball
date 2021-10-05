@@ -10,7 +10,7 @@ h1 {
 }
 
 #question {
-    box-shadow: 1px 1px darkred;
+    box-shadow: 1px 1px blueviolet;
     background-color: darkslategray;
     color: whitesmoke;
     font-weight: bold;
@@ -28,7 +28,7 @@ button {
     font-family:'Courier New', Courier, monospace;
     font-size: 25px;
     font-weight: bold;
-    background-color: #8b0000;
+    background-color: blueviolet;
 }
 
 .glow-on-hover {
@@ -90,6 +90,7 @@ button {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
 
 .typewriter p {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
