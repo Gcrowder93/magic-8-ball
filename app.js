@@ -4,19 +4,20 @@
   // update DOM to reflect the new state
 
 
-  import { answers } from './answers.js';
+import { answers } from './answers.js';
 
 const getRandomNumber = (max)=>{
-  return Math.floor(Math.random() * max);
-}
+    return Math.floor(Math.random() * max);
+};
 
-const button = document.getElementById('submitButton');
+const submitButton = document.getElementById('submitButton');
 submitButton.addEventListener('click', () => {
   
-  const randomAnswer = getRandomNumber(answers.length);
-  const answer = document.getElementById('answer');
-  answer.textContent = answers[randomAnswer];
-  question.value = '';
+    const randomAnswer = getRandomNumber(answers.length);
+    const answer = document.getElementById('answer');
+    answer.textContent = answers[randomAnswer];
+    // eslint-disable-next-line no-undef
+    question.value = '';
 });
 
 var i = 0;
@@ -26,24 +27,25 @@ var speed = 50;
 function typeWriter() {
 
   //clear the html initially for a text
-  if (i === 0)
-    document.getElementById("answer").innerHTML = '';
+    if (i === 0)
+        document.getElementById('answer').innerHTML = '';
 
-  if (i < txt.length) {
+    if (i < txt.length) {
 
-    document.getElementById("answer").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+        document.getElementById('answer').innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
 }
 
-function onclick() {
+// eslint-disable-next-line no-unused-vars
+function onClick() {
   //set the typing text
-  txt = answers[Math.floor(Math.random() * quotes.length)];
+    txt = answers[Math.floor(Math.random() * answers.length)];
   
   //reset the index
-  i = 0;
-  typeWriter();
+    i = 0;
+    typeWriter();
 }
 
 

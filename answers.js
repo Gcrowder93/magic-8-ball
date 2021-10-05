@@ -1,4 +1,4 @@
-export const answers= [
+export const answers = [
     'Yes',
     'No',
     'Maybe',
@@ -14,4 +14,4 @@ export const answers= [
     'Ask Again',
     'lol...',
     'you really are lonely arent you',
-  ];
+];
